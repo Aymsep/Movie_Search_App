@@ -1,0 +1,24 @@
+
+.app__search{
+    position: relative;
+    margin-top: 20px;
+    svg{
+        position: absolute;
+        margin-right:10px;
+        font-size: 1.4rem;
+        color: white;
+        top: 8px;
+    }
+    input{
+        width: 350px;
+        font-size: 1.1rem;
+        padding: 6px 0px 6px 45px;
+        background-color: transparent !important;
+        color: var(--secondary-bg-color);
+        letter-spacing: .8px;
+        cursor: pointer;
+        font-weight: 500;
+        &:focus{
+        }
+    }
+}

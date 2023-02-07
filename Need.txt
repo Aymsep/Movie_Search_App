@@ -1,0 +1,6 @@
+BiMovie
+BsFillGridFill
+BsFillBookmarkFill
+HiFilm
+RiMovie2Fill
+BsSearch
