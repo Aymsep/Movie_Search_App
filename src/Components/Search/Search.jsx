@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {BsSearch} from 'react-icons/bs'
 import './Search.scss'
 
-const Search = () => {
+const Search = ({setsearch,search,searchmovie}) => {
   const [focused, setfocused] = useState(false)
   const input = document.querySelector('input')
   if(focused) {
@@ -12,9 +12,16 @@ const Search = () => {
   return (
     <div className='app__search'>
       <BsSearch 
-      onClick={()=> setfocused((prev)=>!prev)}
+      onClick={()=>{
+        setfocused((prev)=>!prev)
+        searchmovie(search)
+      }}
       />
       <input
+        value={search}
+        onChange={(e)=> {
+        setsearch(e.target.value)
+        }}
         name='search'
         type="text"
         placeholder="Search For Movies And Series"

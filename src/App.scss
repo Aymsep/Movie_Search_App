@@ -24,5 +24,8 @@ body{
   height: 100%;
   margin-top:25px;
   display: flex;
-  gap: 20px;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 }
